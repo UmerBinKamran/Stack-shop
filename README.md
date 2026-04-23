@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##📦 StackShop – Modern E-Commerce Web App
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-13+-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3+-38B2AC?style=for-the-badge&logo=tailwind-css)
+![API](https://img.shields.io/badge/API-DummyJSON-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-First, run the development server:
+StackShop is a modern and responsive e-commerce web application built using Next.js and Tailwind CSS. It demonstrates dynamic routing, reusable components, and API integration using DummyJSON.
 
-```bash
+##🚀 Features
+🏠 Home page with featured products
+🛍️ Products listing page
+🔍 Product details page (dynamic routing)
+📱 Fully responsive design
+🎨 Clean and modern UI
+🔗 API integration
+♻️ Reusable components
+🛠️ Tech Stack
+Next.js (App Router)
+React
+Tailwind CSS
+DummyJSON API
+
+##📁 Folder Structure
+/src
+/app
+/product
+page.js
+/[id]
+page.js
+/about
+page.js
+page.js
+/components
+Navbar.js
+Footer.js
+ProductCard.js
+/lib
+api.js
+
+##⚙️ Installation & Setup
+git clone https://github.com/UmerBinKamran/Stack-shop.git
+cd stackshop
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open → http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔗 API Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://dummyjson.com/products
 
-## Learn More
+##🎯 Purpose
 
-To learn more about Next.js, take a look at the following resources:
+Built as part of an SMIT assignment to practice modern web development concepts including:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js App Router
+Dynamic routing
+API integration
+Component-based architecture
+🚀 Future Improvements
+🛒 Cart system
+🔍 Search & filtering
+❤️ Wishlist
+🎬 Animations
+👨‍💻 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Umer Kamran
+Aspiring Full Stack Developer 🚀
 
-## Deploy on Vercel
+⭐ Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you like this project, give it a ⭐ on GitHub!
