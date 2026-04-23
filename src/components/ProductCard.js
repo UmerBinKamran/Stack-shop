@@ -6,7 +6,6 @@ export default function ProductCard({ product }) {
       href={`/product/${product.id}`}
       className="group bg-[#0b1220] border border-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-cyan-500/20 transition duration-300"
     >
-      {/* Image */}
       <div className="relative overflow-hidden">
         <img
           src={product.thumbnail}
@@ -14,33 +13,23 @@ export default function ProductCard({ product }) {
           className="w-full h-48 object-cover transform group-hover:scale-110 transition duration-500"
         />
 
-        {/* Discount Badge */}
         {product.discountPercentage > 0 && (
           <span className="absolute top-3 left-3 bg-cyan-500 text-black text-xs font-bold px-2 py-1 rounded-md">
             -{Math.round(product.discountPercentage)}%
           </span>
         )}
       </div>
-
-      {/* Content */}
       <div className="p-4">
-        {/* Title */}
         <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-cyan-400 transition">
           {product.title}
         </h3>
-
-        {/* Category */}
         <p className="text-xs text-gray-500 mb-2 uppercase tracking-wide">
           {product.category}
         </p>
-
-        {/* Rating */}
         <div className="flex items-center gap-1 text-yellow-400 text-sm mb-2">
           {"★".repeat(Math.round(product.rating))}
           <span className="text-gray-400 ml-1">({product.rating})</span>
         </div>
-
-        {/* Price Section */}
         <div className="flex items-center gap-2">
           <span className="text-cyan-400 font-bold text-lg">
             ${product.price}

@@ -9,15 +9,12 @@ export default function Navbar() {
   return (
     <nav className="bg-[#0f172a] border-b border-gray-800 shadow-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link
           href="/"
           className="text-2xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent transition duration-300 hover:scale-105 hover:brightness-125"
         >
           StackShop
         </Link>
-
-        {/* Desktop Links */}
         <div className="hidden md:flex gap-6">
           <Link
             href="/"
@@ -40,8 +37,6 @@ export default function Navbar() {
             About
           </Link>
         </div>
-
-        {/* Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-gray-300 hover:text-white transition"
@@ -49,8 +44,6 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-3 bg-[#0f172a]">
           <Link
