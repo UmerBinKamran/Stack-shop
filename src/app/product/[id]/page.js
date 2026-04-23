@@ -2,8 +2,21 @@ import { getProductById } from "@/lib/api";
 import Link from "next/link";
 
 export default async function ProductDetails({ params }) {
-  const product = await getProductById(params.id);
-  console.log(product);
+  const { id } = await params;
+
+  if (!id) {
+    return <p className="text-white p-6">Invalid product ID</p>;
+  }
+
+  const product = await getProductById(id);
+
+  if (!product || product.message) {
+    return (
+      <main className="bg-[#020617] text-white min-h-screen flex items-center justify-center">
+        <p>Product not found</p>
+      </main>
+    );
+  }
 
   return (
     <main className="bg-[#020617] text-white min-h-screen px-6 py-12">
